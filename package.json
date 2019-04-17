@@ -2,12 +2,14 @@
   "name": "cq-websocket",
   "version": "2.0.0",
   "description": "A Node SDK for developing QQ chatbots based on WebSocket, which is depending on CoolQ and CQHTTP API plugin. ",
+  "main": "./src/index",
   "engines": {
     "cqhttp": "^4.5.0",
     "node": ">=8"
   },
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lint": "eslint --ext .ts src"
   },
   "config": {
     "commitizen": {
@@ -35,7 +37,16 @@
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/release-notes-generator": "^7.1.4",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
     "commitizen": "^3.0.7",
-    "semantic-release": "^15.13.12"
+    "eslint": "^5.16.0",
+    "eslint-config-standard-with-typescript": "^7.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "semantic-release": "^15.13.12",
+    "typescript": "^3.4.3"
   }
 }
