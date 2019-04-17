@@ -12,6 +12,13 @@
   "schedule": "before 3am on Monday",
   "packageRules": [
     {
+      "packagePatterns": [
+        "^@typescript-eslint",
+        "eslint-config-standard-with-typescript"
+      ],
+      "groupName": "typescript eslint"
+    },
+    {
       "packagePatterns": ["^eslint"],
       "groupName": "eslint packages"
     },
