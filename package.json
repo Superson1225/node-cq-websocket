@@ -10,7 +10,8 @@
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint --ext .ts src",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rimraf src/**/*.d.ts src/**/*.js"
   },
   "config": {
     "commitizen": {
@@ -47,6 +48,7 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "rimraf": "^2.6.3",
     "semantic-release": "^15.13.12",
     "typescript": "^3.4.3"
   }
