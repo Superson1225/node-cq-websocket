@@ -12,7 +12,8 @@
     "lint": "eslint --ext .ts src",
     "build": "tsc",
     "clean": "rimraf src/**/*.d.ts src/**/*.js .dist",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "release": "semantic-release"
   },
   "config": {
     "commitizen": {
