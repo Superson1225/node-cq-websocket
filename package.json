@@ -6,7 +6,14 @@
     "cqhttp": "^4.5.0",
     "node": ">=8"
   },
-  "scripts": {},
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/momocow/node-cq-websocket.git"
@@ -23,12 +30,12 @@
     "url": "https://github.com/momocow/node-cq-websocket/issues"
   },
   "homepage": "https://github.com/momocow/node-cq-websocket#readme",
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "dependencies": {},
   "devDependencies": {
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "commitizen": "^3.0.7",
+    "semantic-release": "^15.13.12"
   }
 }
