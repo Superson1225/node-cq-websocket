@@ -9,7 +9,8 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "lint": "eslint --ext .ts src"
+    "lint": "eslint --ext .ts src",
+    "build": "tsc"
   },
   "config": {
     "commitizen": {
