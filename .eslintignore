@@ -1,2 +1,2 @@
-src/**/*.js
+*.js
 src/**/*.d.ts

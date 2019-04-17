@@ -11,7 +11,8 @@
     "commit": "git-cz",
     "lint": "eslint --ext .ts src",
     "build": "tsc",
-    "clean": "rimraf src/**/*.d.ts src/**/*.js"
+    "clean": "rimraf src/**/*.d.ts src/**/*.js .dist",
+    "webpack": "webpack"
   },
   "config": {
     "commitizen": {
@@ -41,6 +42,7 @@
     "@semantic-release/release-notes-generator": "^7.1.4",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
+    "chalk": "^2.4.2",
     "commitizen": "^3.0.7",
     "eslint": "^5.16.0",
     "eslint-config-standard-with-typescript": "^7.0.0",
@@ -48,8 +50,13 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "fs-extra": "^7.0.1",
+    "is-ci": "^2.0.0",
+    "kaomojify-webpack-plugin": "^0.1.1",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.12",
-    "typescript": "^3.4.3"
+    "typescript": "^3.4.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
   }
 }

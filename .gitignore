@@ -1,6 +1,9 @@
 src/**/*.js
 src/**/*.d.ts
 
+# Local build
+.dist
+
 # Logs
 logs
 *.log
